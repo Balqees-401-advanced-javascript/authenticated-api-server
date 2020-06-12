@@ -60,12 +60,12 @@ async function getUser(remoteUser) {
    
   if(data[0]){
    
-    let token = jwt.sign({id: userRecord.id}, process.env.SECRET );
+    let token = jwt.sign({id: userRecord.id, capability:userRecord.role}, process.env.SECRET );
     return [data, token];
   }
   else {
     let savedUser = await model.post(userRecord);      
-    let token = jwt.sign({id: userRecord.id}, process.env.SECRET );
+    let token = jwt.sign({id: userRecord.id,capability:userRecord.role}, process.env.SECRET );
     return [savedUser, token];
   }
 }
