@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "balqees",
+      "display_name": "balqees",
+      "description": "editing",
+      "_id": 1
+    }
+  ],
+  "products": [
+    {
+      "category": "hhh",
+      "name": "Darah",
+      "display_name": "balqees",
+      "description": "hiii",
+      "_id": 1
+    }
+  ]
+}
