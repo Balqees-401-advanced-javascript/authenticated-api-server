@@ -31,9 +31,9 @@ class Model {
         return Promise.reject(err);
       }
      
-      let userName = decoded['username']; // decoded.username
-    
-      return that.schema.find({userName})
+     
+      let id = decoded['id']; // decoded.username
+      return that.schema.find({_id:id})
         .then(result =>{
           if (result.length) {
             return Promise.resolve(result[0]);
